@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cifrados", "cifrados\cifrados.csproj", "{3EBC66E3-CB78-4A98-9943-65A40228867A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testCifrados", "testCifrados\testCifrados.csproj", "{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EBC66E3-CB78-4A98-9943-65A40228867A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EBC66E3-CB78-4A98-9943-65A40228867A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EBC66E3-CB78-4A98-9943-65A40228867A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EBC66E3-CB78-4A98-9943-65A40228867A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BE73451-3138-4EE3-8388-4DD77CD1C077}
+	EndGlobalSection
+EndGlobal
