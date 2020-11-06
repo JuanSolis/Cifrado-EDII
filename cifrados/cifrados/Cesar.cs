@@ -12,13 +12,14 @@ namespace cifrados
         public Dictionary<string,string> diccionarioCifrado = new Dictionary<string,string>();
 
         public string mensajeCifrado;
+        public string mensajeDescifrado;
         public Cesar() {
             for (int i = 65; i < 91; i++)
             {
                 lista.Add(((char)i).ToString());   
             }
         }
-
+         
 
         public void Cifrar(string clave, string mensaje) {
 
@@ -42,10 +43,13 @@ namespace cifrados
         }
 
         void crearDiccionario(string clave) {
+
             agregarClave(clave);
             agregarRestoDeDiccionario();
 
+            diccionarioCifrado.Clear();
             int i = 0;
+
             foreach (string item in lista)
             {
                 diccionarioCifrado.Add(item, listaConClave.ElementAt(i).ToString());
@@ -54,6 +58,7 @@ namespace cifrados
         }
 
         void agregarRestoDeDiccionario() {
+
             foreach (string item in lista)
             {
                 if (!listaConClave.Contains(item))
@@ -64,7 +69,7 @@ namespace cifrados
 
         }
         void agregarClave(string clave) {
-
+            listaConClave.Clear();
             foreach (char item in clave)
             {
                 listaConClave.Add(item.ToString());
@@ -100,5 +105,23 @@ namespace cifrados
             clave = finalString;
         }
 
+        public void Descifrar(string clave, string mensajeCifrado) {
+            crearDiccionario(clave);
+            string msgDescifrado = "";
+            foreach (char caracter in mensajeCifrado)
+            {
+                if (diccionarioCifrado.ContainsKey(caracter.ToString()))
+                {
+                    msgDescifrado += diccionarioCifrado.FirstOrDefault(x => x.Value.Equals(caracter.ToString())).Key;
+
+                }
+                else
+                {
+                    msgDescifrado += caracter.ToString();
+                }
+            }
+
+            mensajeDescifrado = msgDescifrado;
+        }
     }
 }
