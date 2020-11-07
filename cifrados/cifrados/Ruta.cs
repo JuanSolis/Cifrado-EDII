@@ -78,7 +78,7 @@ namespace cifrados
                 }
             }
 
-            //outPut = outPut.Replace('#', ' ');
+            outPut = outPut.Replace('#', ' ');
 
             textoDescifrado = outPut;
         }

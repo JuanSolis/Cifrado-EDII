@@ -64,6 +64,16 @@ namespace API.Controllers
 
                         }
                         break;
+                        case ".zz":
+                            {
+                                ZigZag cifradoZigZag = new ZigZag(text, Key.Levels);
+                                cifradoZigZag.Descifrar(text, Key.Levels);
+
+                                archivoDecodificado = pathDirectorioDescompresiones + file.FileName.Split(".")[0] + ext;
+                                textoDecodificado = cifradoZigZag.textoDescifrado;
+
+                            }
+                        break;
                 }
 
                 System.IO.File.WriteAllBytes(archivoDecodificado, System.Text.Encoding.Default.GetBytes(textoDecodificado));
