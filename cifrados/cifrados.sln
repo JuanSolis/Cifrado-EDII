@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cifrados", "cifrados\cifrados.csproj", "{3EBC66E3-CB78-4A98-9943-65A40228867A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cifrados", "cifrados\cifrados.csproj", "{3EBC66E3-CB78-4A98-9943-65A40228867A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testCifrados", "testCifrados\testCifrados.csproj", "{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testCifrados", "testCifrados\testCifrados.csproj", "{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{C7DBF88F-6185-407A-A41C-6A82ABB637F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F6EA9C5-430C-4B7C-BE53-88FD100C5A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DBF88F-6185-407A-A41C-6A82ABB637F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DBF88F-6185-407A-A41C-6A82ABB637F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DBF88F-6185-407A-A41C-6A82ABB637F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DBF88F-6185-407A-A41C-6A82ABB637F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
