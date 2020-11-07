@@ -74,6 +74,16 @@ namespace API.Controllers
 
                             }
                         break;
+                    case ".rt":
+                        {
+                            Ruta cifragoRuta = new Ruta(Key.Rows, Key.Columns, text);
+                            cifragoRuta.descifrar();
+
+                            archivoDecodificado = pathDirectorioDescompresiones + file.FileName.Split(".")[0] + ext;
+                            textoDecodificado = cifragoRuta.textoDescifrado;
+
+                        }
+                        break;
                 }
 
                 System.IO.File.WriteAllBytes(archivoDecodificado, System.Text.Encoding.Default.GetBytes(textoDecodificado));
