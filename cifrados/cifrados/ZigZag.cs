@@ -18,6 +18,7 @@ namespace cifrados
         string extensionA = "";
 
         public string textoCifrado = "";
+        public string textoDescifrado = "";
         public string NombreArchivoNuevo = "";
         public string NombreOriginalArchivo = "";
         public string outPut = "";
@@ -81,7 +82,7 @@ namespace cifrados
 
             }
             textoCifrado = cifrado;
-            Console.WriteLine(cifrado);
+            
 
         }
 
@@ -150,8 +151,9 @@ namespace cifrados
             }
 
             output = extensionA;
-            Console.WriteLine(output);
-        
+            textoDescifrado = output;
+
+
         }
 
     }
